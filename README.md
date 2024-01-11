@@ -76,10 +76,10 @@ echo $(ls /home/ec2-user/apps-cloud-lksn2022)
 
 echo "step4 - Create env"
 touch /home/ec2-user/apps-cloud-lksn2022/frontend/.env
-printf "REACT_APP_BACKEND=http://34.201.137.4:5000\n" >> /home/ec2-user/apps-cloud-lksn2022/frontend/.env
-printf "REDIS_HOST=clustercfg.lks-redis.igqc2q.use1.cache.amazonaws.com\n" >> /home/ec2-user/apps-cloud-lksn2022/frontend/.env
+printf "REACT_APP_BACKEND=http://your-ip:5000\n" >> /home/ec2-user/apps-cloud-lksn2022/frontend/.env
+printf "REDIS_HOST=XXX\n" >> /home/ec2-user/apps-cloud-lksn2022/frontend/.env
 printf "REDIS_PORT=6379\n" >> /home/ec2-user/apps-cloud-lksn2022/frontend/.env
-printf "REDIS_PASS=lksredissony2005\n" >> /home/ec2-user/apps-cloud-lksn2022/frontend/.env
+printf "REDIS_PASS=XXX\n" >> /home/ec2-user/apps-cloud-lksn2022/frontend/.env
 printf "LOG_PATH=/home/ec2-user/efs/server/tmp\n" >> /home/ec2-user/apps-cloud-lksn2022/frontend/.env
 printf "CACHE_PATH=/home/ec2-user/efs/server/logs\n" >> /home/ec2-user/apps-cloud-lksn2022/frontend/.env
 echo "step5 - mount efs"
