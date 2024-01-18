@@ -71,7 +71,7 @@ echo "step2 - install nodejs v16"
 yum install https://rpm.nodesource.com/pub_16.x/nodistro/repo/nodesource-release-nodistro-1.noarch.rpm -y
 yum install -y nodejs
 
-echo "step3 - Clone github Backend"
+echo "step3 - Clone github Frontend"
 mkdir /home/ec2-user/apps-cloud-lksn2022
 git clone https://github.com/SonyVansha25/apps-cloud-lksn2022.git /home/ec2-user/apps-cloud-lksn2022
 echo $(ls /home/ec2-user/apps-cloud-lksn2022)
